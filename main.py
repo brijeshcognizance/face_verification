@@ -11,7 +11,7 @@ import tensorflow as tf
 # from database import database
 
 
-model = load_model('./model/nn4.small2.lrn.h5',custom_objects = {'triplet_loss' : triplet_loss,'tf':tf})
+model = load_model('nn4.small2.lrn.h5',custom_objects = {'triplet_loss' : triplet_loss,'tf':tf})
 file_to_read = open("db_geekyfile", "rb")
 database = pickle.load(file_to_read)
 
